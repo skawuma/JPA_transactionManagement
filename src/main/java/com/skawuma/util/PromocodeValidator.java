@@ -1,0 +1,19 @@
+package com.skawuma.util;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author samuelkawuma
+ * @package com.skawuma.util
+ * @project practoapp
+ * @date 6/6/24
+ */
+public class PromocodeValidator {
+    public static void validatePromoCode(String promoCode) {
+        List<String> promoCodes = Arrays.asList("3467hjdbf", "jdfhjke3786t", "7846hbfdh");
+        if (!promoCodes.contains(promoCode)) {
+            throw new RuntimeException("Invalid Promocode !! Please verify before enter again");
+        }
+    }
+}
